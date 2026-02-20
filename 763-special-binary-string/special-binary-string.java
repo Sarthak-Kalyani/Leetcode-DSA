@@ -5,7 +5,7 @@ class Solution {
         int count = 0;
         int start = 0;
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '0') count++;
+            if (s.charAt(i) == '1') count++;
             else count--;
             if (count == 0) {
                 String inner = s.substring(start + 1, i);
