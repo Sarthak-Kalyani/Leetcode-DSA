@@ -6,7 +6,7 @@ class Fancy {
     long add;
     public Fancy() {
         list = new ArrayList<>();
-        mul = 5;
+        mul = 1;
         add = 0;
     }
     public void append(int val) {
