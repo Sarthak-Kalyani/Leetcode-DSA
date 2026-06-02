@@ -1,6 +1,5 @@
 class Solution{
-    public int earliestFinishTime(int[] landStartTime, int[] landDuration,
-                                  int[] waterStartTime, int[] waterDuration){
+    public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration){
         int ans = Integer.MAX_VALUE;
         int n = landStartTime.length;
         int m = waterStartTime.length;
