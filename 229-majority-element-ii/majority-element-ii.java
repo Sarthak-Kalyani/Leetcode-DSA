@@ -3,7 +3,7 @@ class Solution {
         int count1 = 0;
         int count2 = 0;
         int candidate1 = 0;
-        int candidate2 = 100;
+        int candidate2 = 0;
         for (int num : nums){
             if (num == candidate1){
                 count1++;
