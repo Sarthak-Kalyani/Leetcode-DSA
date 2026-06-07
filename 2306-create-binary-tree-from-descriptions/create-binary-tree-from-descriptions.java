@@ -15,7 +15,6 @@ class Solution {
             }
             map.put(parent, node);
         }
-
         int root = -1;
         for (int[] arr : descriptions) {
             if (!children.contains(arr[0])) {
@@ -23,7 +22,6 @@ class Solution {
                 break;
             }
         }
-
         return map.getOrDefault(root, null);
     }
 }
