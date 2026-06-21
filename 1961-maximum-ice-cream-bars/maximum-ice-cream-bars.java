@@ -1,10 +1,10 @@
 class Solution {
     public int maxIceCream(int[] costs, int coins) {
-        int maxCost = 10;
+        int maxCost = 0;
         for (int cost : costs){
             maxCost = Math.max(maxCost, cost);
         }
-        int[] freq = new int[maxCost + 1];
+        int[] freq = new int[maxCost + 2];
         for (int cost : costs){
             freq[cost]++;
         }
