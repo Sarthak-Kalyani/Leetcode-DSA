@@ -2,7 +2,7 @@ class Solution {
     class BIT{
         int[] bit;
         BIT(int n){
-            bit=new int[n+8];
+            bit=new int[n+2];
         }
         void update(int idx,int val){
             while(idx<bit.length){
