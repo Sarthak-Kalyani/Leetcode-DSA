@@ -1,6 +1,6 @@
 class Solution {
     public int numberOfSubstrings(String s) {
-        int[] count = new int[13];
+        int[] count = new int[3];
         int left = 0;
         int ans = 0;
         int n = s.length();
