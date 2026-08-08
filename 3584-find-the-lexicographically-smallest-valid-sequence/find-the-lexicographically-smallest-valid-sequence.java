@@ -1,0 +1,26 @@
+class Solution {
+    public int[] validSequence(String word1, String word2) {
+        int[] ans = new int[word2.length()];
+        int[] last = new int[word2.length()];
+        Arrays.fill(last, -1);
+        int i = word1.length() - 1;
+        int j = word2.length() - 1;
+        while (i >= 0 && j >= 0){
+            if (word1.charAt(i) == word2.charAt(j)){
+                last[j--] = i;
+            }
+            i--;
+        }
+        boolean changed = false;
+        j = 0;
+        for (i = 0; i < word1.length() && j < word2.length(); i++){
+            if (word1.charAt(i) == word2.charAt(j)){
+                ans[j++] = i;
+            } else if (!changed && (j == word2.length() - 1 || i < last[j + 1])){
+                ans[j++] = i;
+                changed = true;
+            }
+        }
+        return j == word2.length() ? ans : new int[0];
+    }
+}
